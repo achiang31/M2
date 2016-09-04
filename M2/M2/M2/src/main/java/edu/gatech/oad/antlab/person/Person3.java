@@ -52,4 +52,9 @@ public class Person3 {
 	  return retStr;
 	}
 
+	public static void main(String[] args) {
+    Person3 person3 = new Person3("person3");
+	  String testStr = "xuzihan_0311";
+	  System.out.println(person3.calc(testStr));
+	}
 }
