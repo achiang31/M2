@@ -1,4 +1,4 @@
-// package edu.gatech.oad.antlab.person;
+//package edu.gatech.oad.antlab.person;
 /**
  *  A simple class for person 3
  *  returns their name and a
@@ -16,8 +16,8 @@ public class Person3 {
 	 * name
 	 * @param pname the person's real name
 	 */
-	public Person3(String pname){
-	  name = pname;
+	public Person3(String ZihanXu){
+	  name = "Zihan Xu";
 	}
 
 	/**
