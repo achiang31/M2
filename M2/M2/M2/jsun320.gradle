@@ -17,4 +17,9 @@ jar {
 // everything we need for the test can be found in resources
 dependencies {
     compile files('lib/resources.jar');
+    testCompile "junit:junit:4.12"
+}
+
+repositories {
+    mavenCentral()
 }

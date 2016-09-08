@@ -17,8 +17,8 @@ public class Person4 {
      * name
      * @param pname the person's real name
      */
-  public Person4(String xingxing) {
-    name = xingxing;
+  public Person4(String pname) {
+    name = pname;
   }
     /**
      * This method should return a string
