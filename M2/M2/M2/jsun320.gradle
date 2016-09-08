@@ -1,0 +1,20 @@
+// Gradle file created by xingxing
+
+apply plugin: 'java'
+
+//create a jar task to create a jar file
+defaultTasks 'jar'
+jar {
+    manifest {
+        attributes("Main-Class": 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+            "Class-Path": "../../lib/resources.jar")
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    //with jar
+}
+
+// everything we need for the test can be found in resources
+dependencies {
+    compile files('lib/resources.jar');
+}
