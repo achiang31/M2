@@ -36,7 +36,7 @@ public class Person5 {
 		} else if (input.length() == 2) {
 			return input;
 		}
-		String temp = input.substring(2) + input.substring(0, 1);
+		String temp = input.substring(2) + input.substring(0, 2);
 	  	return temp;
 	}
 	
