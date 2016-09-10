@@ -1,21 +1,23 @@
+/*
+Created by Alex Xu
+*/
+
 defaultTasks 'jar'
 
 apply plugin: 'java'
 
-//repositories {
-    //mavenCentral()
-//}
+repositories {
+    mavenCentral()
+}
 
 dependencies {
 	compile files('lib/resources.jar')
+	testCompile 'junit:junit:4.12'
 }
 
-version = '1.0'
 jar {
 	manifest {
-		attributes ('Implementation-Title': 'Milestone2',
-		'Implementation-Version': version,
-		'Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
-		'Class-Path': '../../lib/resources.jar')
+		attributes ('Main-Class': 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+					'Class-Path': '../../lib/resources.jar')
 	}
 }
